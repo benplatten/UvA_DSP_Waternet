@@ -1,0 +1,253 @@
+,postalcode,region
+0,1011,A
+1,1012,A
+0,1015,A
+1,1016,A
+2,1017,A
+3,1018,A
+0,1040,B
+1,1041,B
+2,1042,B
+3,1043,B
+4,1044,B
+5,1045,B
+6,1046,B
+7,1047,B
+8,1048,B
+9,1049,B
+0,1013,E
+1,1014,E
+0,1050,E
+1,1051,E
+2,1052,E
+3,1053,E
+4,1054,E
+5,1055,E
+6,1056,E
+7,1057,E
+0,1060,F
+1,1061,F
+2,1062,F
+3,1063,F
+4,1064,F
+5,1065,F
+6,1066,F
+7,1067,F
+8,1068,F
+9,1069,F
+0,1058,K
+1,1059,K
+0,1070,K
+1,1071,K
+2,1072,K
+3,1073,K
+4,1074,K
+5,1075,K
+6,1076,K
+7,1077,K
+8,1078,K
+9,1079,K
+10,1080,K
+11,1081,K
+12,1082,K
+13,1083,K
+0,1019,M
+0,1806,M
+1,1807,M
+2,1808,M
+3,1809,M
+4,1810,M
+5,1811,M
+6,1812,M
+7,1813,M
+8,1814,M
+9,1815,M
+10,1816,M
+11,1817,M
+12,1818,M
+13,1819,M
+0,1086,M
+1,1087,M
+2,1088,M
+3,1089,M
+4,1090,M
+5,1091,M
+6,1092,M
+7,1093,M
+8,1094,M
+9,1095,M
+10,1096,M
+11,1097,M
+12,1098,M
+13,1099,M
+0,1020,N
+1,1021,N
+2,1022,N
+3,1023,N
+4,1024,N
+5,1025,N
+6,1026,N
+7,1027,N
+8,1028,N
+9,1029,N
+10,1030,N
+11,1031,N
+12,1032,N
+13,1033,N
+14,1034,N
+15,1035,N
+16,1036,N
+17,1037,N
+18,1038,N
+19,1039,N
+0,1100,T
+1,1101,T
+2,1102,T
+3,1103,T
+4,1104,T
+5,1105,T
+6,1106,T
+7,1107,T
+8,1108,T
+9,1109,T
+0,1000,A Total
+1,1001,A Total
+2,1002,A Total
+3,1003,A Total
+4,1004,A Total
+5,1005,A Total
+6,1006,A Total
+7,1007,A Total
+8,1008,A Total
+9,1009,A Total
+10,1010,A Total
+11,1011,A Total
+12,1012,A Total
+13,1013,A Total
+14,1014,A Total
+15,1015,A Total
+16,1016,A Total
+17,1017,A Total
+18,1018,A Total
+19,1019,A Total
+20,1020,A Total
+21,1021,A Total
+22,1022,A Total
+23,1023,A Total
+24,1024,A Total
+25,1025,A Total
+26,1026,A Total
+27,1027,A Total
+28,1028,A Total
+29,1029,A Total
+30,1030,A Total
+31,1031,A Total
+32,1032,A Total
+33,1033,A Total
+34,1034,A Total
+35,1035,A Total
+36,1036,A Total
+37,1037,A Total
+38,1038,A Total
+39,1039,A Total
+40,1040,A Total
+41,1041,A Total
+42,1042,A Total
+43,1043,A Total
+44,1044,A Total
+45,1045,A Total
+46,1046,A Total
+47,1047,A Total
+48,1048,A Total
+49,1049,A Total
+50,1050,A Total
+51,1051,A Total
+52,1052,A Total
+53,1053,A Total
+54,1054,A Total
+55,1055,A Total
+56,1056,A Total
+57,1057,A Total
+58,1058,A Total
+59,1059,A Total
+60,1060,A Total
+61,1061,A Total
+62,1062,A Total
+63,1063,A Total
+64,1064,A Total
+65,1065,A Total
+66,1066,A Total
+67,1067,A Total
+68,1068,A Total
+69,1069,A Total
+70,1070,A Total
+71,1071,A Total
+72,1072,A Total
+73,1073,A Total
+74,1074,A Total
+75,1075,A Total
+76,1076,A Total
+77,1077,A Total
+78,1078,A Total
+79,1079,A Total
+80,1080,A Total
+81,1081,A Total
+82,1082,A Total
+83,1083,A Total
+84,1084,A Total
+85,1085,A Total
+86,1086,A Total
+87,1087,A Total
+88,1088,A Total
+89,1089,A Total
+90,1090,A Total
+91,1091,A Total
+92,1092,A Total
+93,1093,A Total
+94,1094,A Total
+95,1095,A Total
+96,1096,A Total
+97,1097,A Total
+98,1098,A Total
+99,1099,A Total
+100,1100,A Total
+101,1101,A Total
+102,1102,A Total
+103,1103,A Total
+104,1104,A Total
+105,1105,A Total
+106,1106,A Total
+107,1107,A Total
+108,1108,A Total
+109,1109,A Total
+0,1180,Amstelveen
+1,1181,Amstelveen
+2,1182,Amstelveen
+3,1183,Amstelveen
+4,1184,Amstelveen
+5,1185,Amstelveen
+6,1186,Amstelveen
+7,1187,Amstelveen
+8,1188,Amstelveen
+9,1189,Amstelveen
+0,1110,Diemen
+1,1111,Diemen
+2,1112,Diemen
+3,1113,Diemen
+0,2100,Heemstede
+1,2101,Heemstede
+2,2102,Heemstede
+3,2103,Heemstede
+4,2104,Heemstede
+5,2105,Heemstede
+6,2106,Heemstede
+0,1398,Muiden
+1,1399,Muiden
+0,1114,Ouder amstel
+1,1115,Ouder amstel
+0,1190,Ouder amstel
+1,1191,Ouder amstel
+0,1117,Schiphol
+1,1118,Schiphol
+2,1119,Schiphol
+0,0,Onbepaalde
