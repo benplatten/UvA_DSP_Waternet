@@ -1,6 +1,10 @@
 import pandas as pd
 import numpy as np
 import logging
+import warnings
+warnings.filterwarnings('ignore')
+
+logging.basicConfig(level=logging.NOTSET)
 
 def process_airbnb_data(reviews,listings,region_mapping): # ratio_data):
 
@@ -17,7 +21,7 @@ def process_airbnb_data(reviews,listings,region_mapping): # ratio_data):
 
     unmatched_regions = listings_smol['neighbourhood'][listings_smol['region'].isna()].to_list() 
     if len(unmatched_regions) > 0:
-        logging.info("No mapping region: ",unmatched_regions)
+        logging.info("No mapping region: {}".format(' '.join(map(str, unmatched_regions))))
     else:
         logging.info("All regions mapped")
     
@@ -28,7 +32,7 @@ def process_airbnb_data(reviews,listings,region_mapping): # ratio_data):
 
     unmatched_listings = daily_reviews_borough['listing_id'][daily_reviews_borough.isna().any(axis=1)].to_list()
     if len(unmatched_listings) > 0:
-        logging.info("No match for listing: ",unmatched_regions)
+        logging.info("No match for listing: {}".format(' '.join(map(str, unmatched_listings))))
     else:
         logging.info("All listings matched")
 
