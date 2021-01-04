@@ -28,10 +28,11 @@ def process_output_data(output_data,postcode_dict):
      logging.info("NaN dates dropped: {}".format(nan_dates))
      df = df[df['CONSUMPTION_START_DATE'].notna()]
      df = df[df['CONSUMPTION_END_DATE'].notna()]   
+     logging.info("Formatting dates")
      df['CONSUMPTION_START_DATE'] = df['CONSUMPTION_START_DATE'].apply(lambda x: pd.to_datetime(x, format='%Y-%m-%d'))
      df['CONSUMPTION_END_DATE'] = df['CONSUMPTION_END_DATE'].apply(lambda x: pd.to_datetime(x, format='%Y-%m-%d'))
 
-
+     logging.info("Setting regions")
      df['region'] = df['POSTCODE'].map(postcode_dict) 
      df.dropna(subset=['region'],inplace=True)
 
@@ -46,7 +47,7 @@ def process_output_data(output_data,postcode_dict):
      df2 = (pd.concat([df[['CONSUMPTION_ID','CONSUMPTION_START_DATE']], df1], sort=False, ignore_index=True)
          .sort_values(['CONSUMPTION_ID','CONSUMPTION_START_DATE'])
          .reset_index(drop=True))
-         
+
      df2.drop_duplicates(inplace=True)
 
      mask = df2['CONSUMPTION_ID'].duplicated(keep='last')
@@ -63,6 +64,10 @@ def process_output_data(output_data,postcode_dict):
      consumption_yearly['CONSUMPTION'] = consumption_yearly['days'] * consumption_yearly['consumption_per_day']
      consumption_yearly['year'] = consumption_yearly['CONSUMPTION_START_DATE'].dt.year
      consumption_yearly.drop(consumption_yearly[consumption_yearly['CONSUMPTION_START_DATE'].dt.year < 2010].index,inplace=True)
+     
+     # bug fix
+     consumption_yearly = consumption_yearly[consumption_yearly['CONSUMPTION_START_DATE'].dt.year == consumption_yearly['CONSUMPTION_END_DATE'].dt.year]
+
      consumption_yearly_grouped = consumption_yearly.groupby(['CONSUMPTION_OBJECT_ID','year']).sum().reset_index()
      consumption_yearly_grouped = consumption_yearly_grouped.merge(df_categories, on='CONSUMPTION_OBJECT_ID',how='left')
 
